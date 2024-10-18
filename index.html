@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>City Temperature</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <div>
+            <div class="form">
+                <input type="text" placeholder="City" id="input" onkeyup="enter(event)">
+                <button onClick="get_weather()">
+                    <p><i class="fa fa-search" aria-hidden="true"></i></p>
+                </button>
+            </div>
+            <p id="errorMessage"></p>
+
+            <div id="info_list">
+                <div>
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i></p>
+                    <span id="city"></span>
+                    <p>City</p>
+                </div>
+
+                <div>
+                    <img id="country-flag" src="" alt="Country Flag">
+                    <span id="country"></span>
+                    <p>Country</p>
+                </div>
+
+                <div>
+                    <img id="temp_icon" src="" alt="Weather Icon">
+                    <span id="temp"></span>
+                    <p>Temperature</p>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <script src="script/index.js"></script>
+</body>
+
+</html>
